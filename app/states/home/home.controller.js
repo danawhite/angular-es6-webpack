@@ -1,3 +1,9 @@
-/**
- * Created by idxd on 7/9/15.
- */
+class HomeController {
+    constructor() {
+        this.isLoggedIn = false;
+    }
+
+    isLoggedIn() {
+        return this.isLoggedIn;
+    }
+}
