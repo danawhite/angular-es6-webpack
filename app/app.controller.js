@@ -1,3 +1,9 @@
-/**
- * Created by idxd on 7/9/15.
- */
+class AppController {
+    constructor() {
+
+    }
+}
+
+AppController.$inject = [];
+
+export default AppController;

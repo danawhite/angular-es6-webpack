@@ -7,3 +7,5 @@ class HomeController {
         return this.isLoggedIn;
     }
 }
+
+export default HomeController;

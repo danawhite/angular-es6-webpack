@@ -1,13 +1,8 @@
-import angular from 'angular';
-
 import navigationComponent from './navigation.component';
 
-const moduleName = 'app.components.navigation';
+const navigationModuleName = 'app.components.navigation';
 
-const navigationModule = angular.module(moduleName, []);
+angular.module(navigationModuleName, [])
+    .directive('navigation', navigationComponent);
 
-navigationModule
-    .directive('navigation', navigationComponent)
-    .name;
-
-export default navigationModule;
+export default navigationModuleName;

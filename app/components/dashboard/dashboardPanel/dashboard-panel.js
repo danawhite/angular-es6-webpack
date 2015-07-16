@@ -1,11 +1,8 @@
-import angular from 'angular';
+import dashboardComponent from './dashboard-panel.component';
 
-import dashboardComponent from './dashboard-panel.component.js';
+const dashboardPanelModuleName = 'app.components.dashboard';
 
-const moduleName = 'app.components.dashboard';
+angular.module(moduleName, [])
+    .directive('dashboardComponent', dashboardComponent);
 
-const dashboardComponentModule = angular.module(moduleName, []);
-
-dashboardComponentModule
-    .directive('dashboardComponent', dashboardComponent)
-    .name;
+export default dashboardPanelModuleName;

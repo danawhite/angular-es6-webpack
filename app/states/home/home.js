@@ -3,12 +3,10 @@ import uirouter from 'angular-ui-router';
 
 import homeComponent from './home.component';
 
-const moduleName = 'app.states.home';
+const homeModuleName = 'app.states.home';
 
-const homeModule = angular.module(moduleName, [uirouter]);
-
-homeModule
-.config(($stateProvider, $urlRouterProvider) => {
+angular.module(moduleName, [uirouter])
+    .config(($stateProvider, $urlRouterProvider) => {
     $urlRouterProvider.otherwise('/');
     $stateProvider
     .state('home', {
@@ -16,7 +14,6 @@ homeModule
             template: '<home></home>'
         })
 })
-.directive('home', homeComponent)
-.name;
+.directive('home', homeComponent);
 
-export default homeModule;
+export default homeModuleName;
