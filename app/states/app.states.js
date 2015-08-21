@@ -1,11 +1,11 @@
 import Home from './home/home';
 import Dashboard from './dashboard/dashboard.js';
 
-const statesMooduleName = 'app.states';
+const statesModuleName = 'app.states';
 
-angular.module(statesMooduleName, [
+angular.module(statesModuleName, [
     Home,
     Dashboard
 ]);
 
-export default statesMooduleName;
+export default statesModuleName;
